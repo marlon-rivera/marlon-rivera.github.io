@@ -1,0 +1,239 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+body{
+    background-color: #E5E5E5;
+}
+.alura-icon{
+    position: absolute;
+    top: 40px;
+    bottom: 0%;
+    left: 84px;
+    right: 37.43%;
+}
+.text-and-advice{
+    position: absolute;
+    top: 168px;
+    left: 240px;
+}
+.text-to-encrypt{
+    width: 577px;
+    height: 300px;
+    resize: none;
+    border: none;
+    background-color: #E5E5E5;
+    font-size: 32px;
+    font-weight: 400;
+    display: block;
+}
+.text-to-encrypt::placeholder{
+    color: #0A3871;
+}
+.text-and-advice img, p{
+    display: inline;
+}
+.text-and-advice img{
+    position: relative;
+    top: 27px;
+}
+.text-and-advice p{
+    opacity: 80%;
+    font-size: 12px;
+    position: inherit;
+    top: 330px;
+    left: 22px;
+}
+.buttons{
+    position: absolute;
+    top: 520px;
+    left: 240px;
+}
+.button-encrypt, .button-decrypt{
+    height: 67px;
+    width: 328px;
+    left: 0px;
+    top: 0px;
+    border-radius: 24px;
+    padding: 24px;
+    color: white;
+    font-size: 16px;
+    border-color: #0A3871;
+    background-color: #0A3871;
+    border-radius: 24px;
+    text-align: center;
+    padding: 24px;
+    line-height: 19px;
+    cursor: pointer;
+}
+.button-decrypt{
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+.result-text, .result-text-crypted{
+    position: absolute;
+    width: 300px;
+    height: 600px;
+    top: 40px;
+    left: 950px;
+    border-radius: 32px;
+    background-color: white;
+}
+.result-text img{
+    position: relative;
+    width: 75%;
+    top: 180px;
+    left: 45px;
+}
+.result-text h3{
+    position: relative;
+    text-align: center;
+    font-size: 24px;
+    top: 200px;
+}
+.texte{
+    font-size: 14px;
+    position: relative;
+    top: 200px;
+    text-align-last: center;
+    display: block;
+    text-align: center;
+    line-height: 24px;
+}
+.result-crypted{
+    position: relative;
+    border: none;
+    width: 270px;
+    height: 450px;
+    left: 15px;
+    top: 25px;
+    font-size: 24px;
+    resize: none;
+}
+.copy-button{
+    position: relative;
+    width: 270px;
+    left: 15px;
+    top: 35px;
+    background-color: white;
+    border-radius: 18px;
+    height: 50px;
+    cursor: pointer;
+}
+.clear-button{
+    position: relative;
+    width: 270px;
+    left: 15px;
+    top: 25px;
+    background-color: white;
+    border-radius: 18px;
+    height: 50px;
+    cursor: pointer;
+}
+.copy-successfully{
+    position: absolute;
+    font-size: 22px;
+    background-color: white;
+    color:  #0A3871;
+    width: 300px;
+    height: 100px;
+    padding: 15px 20px;
+    border-radius: 24px;
+    
+    top: 300px;
+    left: 500px;
+}
+.copy-successfully input{
+    position: relative;
+    background-color: #0A3871;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: white;
+    left: 85px;
+    top: 15px;
+}
+@media screen and (max-width: 500px) {
+    .alura-icon{
+        position: absolute;
+        width: 32px;
+        height: 48px;
+        top: 24px;
+        bottom: 0%;
+        left: 17px; 
+        right: 37.43%;
+    }
+
+    .text-and-advice{
+        position: absolute;
+        top: 152px;
+        left: 16px;
+    }
+
+    .text-to-encrypt{
+        width: 95%;
+        height: 300px;
+    }
+    .text-and-advice img{
+        position: relative;
+        top: 27px;
+    }
+    .text-and-advice p{
+        font-size: 14px;
+    }
+    .buttons{
+        position: absolute;
+        top: 520px;
+        left: 16px;
+        width: 100%;
+    }
+    .button-encrypt, .button-decrypt{
+        height: 67px;
+        width: 95%;
+        margin: 10px auto;
+    }
+    .button-decrypt{
+        background-color: #D8DFE8;
+        color: #0A3871;
+    }
+    .result-text img{
+        display: none;
+    }
+    .result-text{
+        position: absolute;
+        width: 95%;
+        height: 186px;
+        top: 715px;
+        left: 2.5%;
+    }
+    .result-text h3{
+        position: relative;
+        text-align: center;
+        font-size: 24px;
+        top: 44px;
+    }
+    .texte{
+        font-size: 16px;
+        position: relative;
+        top: 70px;
+        text-align-last: center;
+    }
+    .result-text-crypted{
+        top: 710px;
+        width: 95%;
+        left: 2.5%;
+    }
+    .result-crypted{
+        width: 95%;
+    }
+    .copy-button,.clear-button{
+        width: 95%;   
+    }
+    .copy-successfully{
+        width: 60%;
+        height: 130px;
+        top: 900px;
+        left: 20%;
+    }
+}

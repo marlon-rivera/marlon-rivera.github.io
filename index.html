@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador - Alura</title>
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/style.css">'
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <img src="./images/logo.png" alt="icono alura" class="alura-icon">
+    </header>
+    <main>
+        <div class="text-and-advice">
+            <textarea name="texto" cols="30" rows="10" class="text-to-encrypt" placeholder="Ingrese el texto aqui" id="text-to-encrypt"></textarea>
+            <img src="./images/info-logo.png" alt="info logo" class="info-logo">
+            <p>Solo letras minusculas y sin acentos.</p>
+        </div>
+        <div class="buttons" id="buttons">
+            <input type="button" value="Encriptar" class="button-encrypt" onclick="encryptText(document.getElementById('text-to-encrypt').value)">
+            <input type="button" value="Desencriptar" class="button-decrypt" onclick="decryptText(document.getElementById('text-to-encrypt').value)">
+        </div>
+        <div class="result-text" id="result-text">
+            <img src="./images/Muñeco.png" alt="">
+            <h3>Ningun mensaje fue encontrado</h3>
+            <p class="texte">Ingresa el texto que desdea encriptar o desencriptar.</p>
+        </div>
+        <div class="result-text-crypted" id="result-text-crypted" hidden>
+            <textarea name="result-crypted" id="result-crypted" cols="30" rows="10" class="result-crypted" readonly></textarea>
+            <input type="button" value="Limpiar" class="clear-button" onclick="clearText()">
+            <input type="button" value="Copiar" class="copy-button" onclick="copyText()">
+        </div>
+        <div class="copy-successfully" id="copy-successfully" hidden>
+            <p>Copiado correctamente!</p>
+            <input type="button" value="Aceptar" onclick="hideDialogCopySuccessfully()">
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="../js/encryptor.js"></script>
+</body>
+</html>
