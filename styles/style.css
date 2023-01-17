@@ -229,6 +229,7 @@ body{
     }
     .copy-button,.clear-button{
         width: 95%;   
+        left : 2.5%;
     }
     .copy-successfully{
         width: 60%;
